@@ -1,3 +1,4 @@
+import os; os.system('apt-get update -qq && apt-get install -qq libgl1 tesseract-ocr > /dev/null')
 import os
 os.system('apt-get install libgl1 -qq > /dev/null')  # Fixes OpenCV dependency
 import os; os.system('apt-get install tesseract-ocr libgl1 -qq')
