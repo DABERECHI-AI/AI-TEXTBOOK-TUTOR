@@ -28,7 +28,7 @@ def extract_text(uploaded_file):
     text = ""
     for img in images:
         processed = preprocess_image(img)
-        text += pytesseract.image_to_string(processed) + "
+       text += pytesseract.image_to_string(processed) + "\n\n"
 
 "
     return text
