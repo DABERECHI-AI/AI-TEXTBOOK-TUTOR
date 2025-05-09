@@ -28,9 +28,7 @@ def extract_text(uploaded_file):
     text = ""
     for img in images:
         processed = preprocess_image(img)
-       text += pytesseract.image_to_string(processed) + "\n\n"
-
-"
+        text += pytesseract.image_to_string(processed) + "\n\n"  # ← 4 spaces before
     return text
 
 # --- Q&A Function ---
