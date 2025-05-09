@@ -1,3 +1,5 @@
+import os
+os.system('apt-get install libgl1 -qq > /dev/null')  # Fixes OpenCV dependency
 import os; os.system('apt-get install tesseract-ocr libgl1 -qq')
 import streamlit as st
 import os
